@@ -33,6 +33,9 @@ pip install -r requirements.txt
 
 ### Techs and Libs
 - Python (Código)
+- tweepy (Consultar API do Twitter)
+- pandas (Tratar o arquivo .csv)
+- s3fs   (Conexão com o bucket S3 da AWS)
 
 
 ---
