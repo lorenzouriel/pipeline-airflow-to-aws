@@ -10,7 +10,7 @@ def run_twitter_etl():
     consumer_key = "O5Adm6r3TI2G9CfNO2R3JSIbK"
     consumer_secret = "b2PWvCBeW7KH7dLVGE8wwPa2GJ5chomsEMEboXhbtw06TfjOKV"
     csv_name = "lorenzo_twitter_data.csv"
-    bucket_location = ""
+    bucket_location = "s3://lorenzo-airflow-twitter-etl/"
 
     #Twitter Auth
     auth = tweepy.OAuth1UserHandler(
