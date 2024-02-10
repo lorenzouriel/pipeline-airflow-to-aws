@@ -27,21 +27,46 @@ source .venv/bin/activate
 pip install -r requirements.txt  
 ```
 
+#### 4. Atualize as suas keys na API do X (Twitter):
+```
+access_key = ["YOUR ACCESS TOKEN"]
+access_secret = ["YOUR ACCESS SECRET"]
+consumer_key = ["YOUR API KEY"]
+consumer_secret = ["YOUR API SECRET"]
+```
+
+#### 5. Atualize a localização do seu Bucket S3 e o nome do arquivo:
+```
+csv_name = ["YOU CSV FILE NAME"]
+bucket_location = ["YOUR S3 BUCKET"] 
+```
+
+#### 6. Suba a EC2 no AWS e rode os seguintes comandos:
+```
+sudo apt-get update
+sudo apt install python3-pip
+sudo pip install apache-airflow
+sudo pip install pandas
+sudo pip install s3fs
+sudo pip install tweepy
+```
+
 
 ### Arquitetura
-![arquitetura]()
+![arquitetura](/docs/architecture.png)
 
-### Techs and Libs
+### Tecnologias e Bibliotecas
 - Python (Código)
-- tweepy (Consultar API do Twitter)
-- pandas (Tratar o arquivo .csv)
-- s3fs   (Conexão com o bucket S3 da AWS)
+- Pyenv (Ambiente virtual)
+- tweepy (API do Twitter)
+- pandas (Manipular .csv)
+- s3fs (Bucket S3 da AWS)
 
 
 ---
 ---
 ---
----
+
 ### Installation and Configuration
 
 #### 1. Clone the repository:
@@ -71,10 +96,38 @@ source .venv/bin/activate
 pip install -r requirements.txt  
 ```
 
+#### 4. Update your keys from X API (Twitter):
+```
+access_key = ["YOUR ACCESS TOKEN"]
+access_secret = ["YOUR ACCESS SECRET"]
+consumer_key = ["YOUR API KEY"]
+consumer_secret = ["YOUR API SECRET"]
+```
 
-### Architecture
-![architecture]()
+#### 5. Update your S3 bucket location and csv name:
+```
+csv_name = ["YOU CSV FILE NAME"]
+bucket_location = ["YOUR S3 BUCKET"] 
+```
+
+#### 6. Up EC2 on AWS and run the following commands:
+```
+sudo apt-get update
+sudo apt install python3-pip
+sudo pip install apache-airflow
+sudo pip install pandas
+sudo pip install s3fs
+sudo pip install tweepy
+```
 
 
-### Techs and Libs
-- 
+### Arquitetura
+![arquitetura](/docs/architecture.png)
+
+
+### Techs e Libs
+- Python (Code)
+- Pyenv (Virtual Env)
+- tweepy (Twitter API)
+- pandas (Manipulate .csv)
+- s3fs   (Bucket S3 from AWS)
